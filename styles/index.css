@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #303030;
+
+}
+
+.navbar {
+    background-color: #FFFFFF;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    z-index:9999;
+    padding-top: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar .nav-menu {
+
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.banner-image {
+    background-image: url("https://porc.netcdn.ro/media/mageing/slider/slideritem/l/a/landing07012021.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    z-index:0;
+}
+
+.navbar .nav-menu .menu-icon {
+    display: inline-block;
+    background-image: url("https://porc.netcdn.ro/static/frontend/Mageing/porc/ro_RO/images/Menu_black.svg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 20px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.navbar .nav-menu .nav-logo {
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.navbar .nav-content {
+    position: relative;
+    display: block;
+    float: right;
+}
+.navbar .nav-content .costumer-icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+}
+
+
