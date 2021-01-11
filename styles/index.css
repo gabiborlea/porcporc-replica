@@ -1,9 +1,16 @@
+
+
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     background-color: #303030;
+    font-family: 'Ubuntu', sans-serif;
 
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -11,15 +18,14 @@ body {
     height: 50px;
     position: fixed;
     width: 100%;
-    box-sizing: border-box;
     border: none;
-    z-index:9999;
+    z-index: 100;
     padding-top: 16px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.navbar .nav-menu {
+.nav-menu {
 
     position: relative;
     display: block;
@@ -29,14 +35,13 @@ body {
 .banner-image {
     background-image: url("https://porc.netcdn.ro/media/mageing/slider/slideritem/l/a/landing07012021.jpg");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100vw auto;
     background-position: center;
     width: 100vw;
     height: 100vh;
-    z-index:0;
 }
 
-.navbar .nav-menu .menu-icon {
+.menu-icon {
     display: inline-block;
     background-image: url("https://porc.netcdn.ro/static/frontend/Mageing/porc/ro_RO/images/Menu_black.svg");
     background-position: top left;
@@ -45,9 +50,13 @@ body {
     width: 20px;
     height: 16px;
     vertical-align: middle;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    Z-Index:999;
 }
 
-.navbar .nav-menu .nav-logo {
+.nav-logo {
     display: inline-block;
     width: 14px;
     height: 16px;
@@ -55,15 +64,113 @@ body {
     vertical-align: middle;
 }
 
-.navbar .nav-content {
-    position: relative;
-    display: block;
+.nav-content {
     float: right;
+    display: flex;
+    margin: 0;
 }
-.navbar .nav-content .costumer-icon {
-    display: inline-block;
+
+.costumer-icon {
+
+    display: block;
+    margin-right: 11px;
     width: 22px;
     height: 22px;
+    position: relative;
 }
+
+.search-icon {
+    display: block;
+    width: 20px;
+    height: 22px;
+    position: relative;
+    padding-top: 1px;
+}
+
+.cart-icon {
+    position: relative;
+    display: block;
+    background-image: url("https://porc.netcdn.ro/static/frontend/Mageing/porc/ro_RO/images/Cart_empty.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 25px;
+    margin-left: 14px;
+    margin-top: -5px;
+}
+
+.side-menu {
+    position: fixed;
+    margin: 0;
+    left: -260px;
+    top: 0;
+    height: 100vh;
+    width: 260px;
+    background-color: #efefef;
+    box-sizing: border-box;
+    z-index: 1000;
+    transition: .4s 0s, visibility 0s 0s;
+    cursor: initial;
+    padding-left: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+
+.menu-icon:hover .side-menu {
+    left: 0;
+
+}
+
+
+
+.close-button {
+    background-image: url("https://porc.netcdn.ro/static/frontend/Mageing/porc/ro_RO/images/Close_black.svg");
+    background-color: transparent;
+    width: 20px;
+    display: block;
+    height: 15px;
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    cursor: pointer;
+}
+
+.menu-logo {
+    display: block;
+    width: 90px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+.menu-ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+.side-menu li {
+    text-align: left;
+    padding-bottom: 4px;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    display: block;
+    transition: 0.3s;
+}
+.side-menu a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+
+
 
 
