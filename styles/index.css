@@ -1,11 +1,11 @@
 
-
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #303030;
-    font-family: 'Ubuntu', sans-serif;
+    background-color: #FFFFFF;
+    font-family: 'Ubuntu',
+    sans-serif;
 
 }
 
@@ -23,6 +23,7 @@ body {
     padding-top: 16px;
     padding-left: 20px;
     padding-right: 20px;
+    top: 0;
 }
 
 .nav-menu {
@@ -53,7 +54,7 @@ body {
     outline: none;
     border: none;
     cursor: pointer;
-    Z-Index:999;
+    Z-Index: 999;
 }
 
 .nav-logo {
@@ -123,7 +124,6 @@ body {
 }
 
 
-
 .close-button {
     background-image: url("https://porc.netcdn.ro/static/frontend/Mageing/porc/ro_RO/images/Close_black.svg");
     background-color: transparent;
@@ -147,13 +147,13 @@ body {
     padding: 0;
 }
 
-.menu-ul {
+.side-menu ul {
     margin: 0;
     padding: 0;
 
 }
 
-.side-menu li {
+.category-dropdown, .category {
     text-align: left;
     padding-bottom: 4px;
     text-decoration: none;
@@ -161,11 +161,48 @@ body {
     font-size: 15px;
     display: block;
     transition: 0.3s;
+    position: relative;
 }
-.side-menu a{
+
+.category-dropdown::before {
+    content: '>';
+    position: absolute;
+    right: 10px;
+}
+
+.category-dropdown:hover::before {
+    content: ' \2304';
+    top: -7px;
+    font-size: 17px;
+}
+
+.side-menu a {
     text-decoration: none;
     color: #000;
 }
+
+.dropdown {
+    display: none;
+    padding-left: 15px;
+    padding-top: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    transition: .4s 0s, visibility 0s 0s;
+}
+
+.dropdown li {
+    font-size: 13px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.category-dropdown:hover .dropdown {
+    display: block;
+    animation-duration: .4s;
+}
+
+
 
 
 
