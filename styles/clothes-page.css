@@ -7,6 +7,8 @@
 
 .image-container {
     position: relative;
+    text-decoration: none;
+    color: #000000;
 }
 
 .image-container img {
@@ -74,4 +76,23 @@
 
 .item-price{
     margin:0;
+}
+
+.page-numbers{
+    text-decoration: none;
+    margin-top:60px;
+    margin-bottom: 60px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+.page-numbers a{
+    text-decoration: none;
+    color: #bebfc1;
+    font-size: 30px;
+}
+.page-numbers a:hover {
+    color: #000000;
 }

@@ -1,7 +1,5 @@
 
 body {
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
     background-color: #FFFFFF;
     font-family: 'Ubuntu',
@@ -11,6 +9,8 @@ body {
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
@@ -33,13 +33,30 @@ body {
     float: left;
 }
 
+@keyframes slideshow {
+    0% {background-image: url("https://porc.netcdn.ro/media/mageing/slider/slideritem/l/a/landing07012021.jpg")}
+    25% {background-image: url("https://porc.netcdn.ro/media/mageing/slider/slideritem/l/a/landing_15012021.jpg")}
+    50% {background-image: url("https://porc.netcdn.ro/media/mageing/slider/slideritem/l/a/landing_17122020.jpg")}
+    75% {background-image: url("https://porc.netcdn.ro/media/mageing/slider/slideritem/l/a/landing23012021.jpg")}
+    100% {background-image: url("https://porc.netcdn.ro/media/mageing/slider/slideritem/l/a/landing23122020.jpg")}
+
+}
+
+
+/*url("https://porc.netcdn.ro/media/mageing/slider/slideritem/l/a/landing23122020.jpg")*/
+
+
 .banner-image {
-    background-image: url("https://porc.netcdn.ro/media/mageing/slider/slideritem/l/a/landing07012021.jpg");
     background-repeat: no-repeat;
     background-size: 100vw auto;
     background-position: center;
     width: 100vw;
     height: 100vh;
+    animation-name: slideshow;
+    animation-duration: 20s;
+    transition: 0.3s;
+    animation-iteration-count: infinite;
+
 }
 
 .menu-icon {
@@ -165,8 +182,9 @@ body {
 }
 
 .category-dropdown::before {
-    content: '>';
+    content: '\203A';
     position: absolute;
+    font-size: 17px;
     right: 10px;
 }
 
