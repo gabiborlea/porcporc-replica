@@ -202,11 +202,18 @@ body {
     padding: 20px 151px;
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    justify-content: center
-
+    justify-content: center;
+    grid-row-gap: 80px;
 }
 
 .footer-logo {
     width: 200px;
     margin: 15px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
 }
