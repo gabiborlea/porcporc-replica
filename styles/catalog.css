@@ -5,6 +5,7 @@
     color: #000000;
 }
 
+
 .image-container {
     position: relative;
     text-decoration: none;
@@ -53,11 +54,15 @@
     transition: .4s 0s, visibility 0s 0s;
 }
 
+
 .quick-view-button:hover {
     background-color: #FFFFFF;
     border: solid 1px #000000;
     color: #000000;
-
+    cursor: pointer;
+}
+.quick-view-button:hover{
+    outline: none;
 }
 
 .image-container:hover .quick-view-button {
